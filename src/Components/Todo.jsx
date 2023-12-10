@@ -26,7 +26,7 @@ const Todo = () => {
                 console.log(todos);
             // Now we will create local storage for storing our todos, we need to convert our todos array into string
             localStorage.setItem("todos",JSON.stringify(todos));
-            })
+            }, 50);
         },[todos])
 
   return (
